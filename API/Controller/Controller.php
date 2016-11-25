@@ -168,12 +168,12 @@ $ABIGT_Other           = preg_replace('/([^])([ \s]+)/','$1$2',$OtherCURLF."\r\n
 $ABIGT_USERAGENT       = preg_replace('/([^])([ \s]+)/','$1$2',$USERAGENTCURLF."\r\n");
 $Wingy_Default         = str_replace ("DOMAIN-SUFFIX,","      - s,",$DefaultCURLF."\r\n");
 $Wingy_AdvancedF       = str_replace ("DOMAIN-SUFFIX,","      - s,",$AdvancedCURLF."\r\n");
-$Wingy_Advanced        = str_replace ("DOMAIN,","      - s,",$Wingy_AdvancedF."\r\n");
+$Wingy_Advanced        = str_replace ("DOMAIN,","      - c,",$Wingy_AdvancedF."\r\n");
 $Wingy_BasicF          = str_replace ("DOMAIN-SUFFIX,","      - s,",$BasicCURLF."\r\n");
 $Wingy_Basic           = str_replace ("DOMAIN,","      - s,",$Wingy_BasicF."\r\n");
 $Wingy_REJECTT         = str_replace ("DOMAIN,","      - c,",$REJECTCURLF."\r\n");
 $Wingy_REJECT          = str_replace ("DOMAIN-SUFFIX,","      - s,",$Wingy_REJECTT."\r\n");
-$Wingy_DIRECTT         = str_replace ("DOMAIN,","      - s,",$DIRECTCURLF."\r\n");
+$Wingy_DIRECTT         = str_replace ("DOMAIN,","      - c,",$DIRECTCURLF."\r\n");
 $Wingy_DIRECT          = str_replace ("DOMAIN-SUFFIX,","      - s,",$Wingy_DIRECTT."\r\n");
 
 ?>
