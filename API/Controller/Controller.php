@@ -15,6 +15,8 @@ $Cache        = '?Cache='.sha1(mt_rand()).'&TimeStamp='.time();
 
 # 接收GET请求参数
 $Fix       = $_GET['Fix'];
+$Tolerance = $_GET['Tolerance'];
+$Interval  = $_GET['Interval'];
 $Config    = $_GET['Config'];
 $Logo      = $_GET['Logo'];
 $AutoGroup = $_GET['AutoGroup'];
@@ -40,6 +42,7 @@ $Module       = "https://raw.githubusercontent.com/BurpSuite/CloudGate-RuleList/
 $AutoGroupURL = "http://www.gstatic.com/generate_204";
 $HostsFixIP   = "202.171.253.103";
 $YouTubeIP    = "219.76.4.3";
+$HTTPSURL     = "true";
 
 # 默认云端模块地址
 $Potatso_Config_Module      = "https://raw.githubusercontent.com/BurpSuite/CloudGate-RuleList/master/General/Potatso_General.cfg";
@@ -155,7 +158,7 @@ $Potatso_REJECT        = preg_replace('/([^])([ \s]+)/','  - $1,REJECT$2',$REJEC
 $Potatso_KEYWORD       = preg_replace('/([^])([ \s]+)/','  - DOMAIN-MATCH,$1$2',$KEYWORDCURLF."\r\n");
 $Potatso_IPCIDR        = preg_replace('/([^])([ \s]+)/','  - IP-CIDR,$1$2',$IPCIDRCURLF."\r\n");
 $Potatso_OtherF        = preg_replace('/([^])([ \s]+)/','  - $1$2',$OtherCURLF."\r\n");
-$Potatso_Other         = preg_replace('/  - FINAL,Proxy/','',$OtherF."\r\n");
+$Potatso_Other         = preg_replace('/  - FINAL,Proxy/','',$Potatso_OtherF."\r\n");
 $ABIGT_Default         = preg_replace('/([^])([ \s]+)/','$1,DIRECT$2',$DefaultCURLF."\r\n");
 $ABIGT_Advanced        = preg_replace('/([^])([ \s]+)/','$1,Proxy$2',$AdvancedCURLF."\r\n");
 $ABIGT_Basic           = preg_replace('/([^])([ \s]+)/','$1,Proxy$2',$BasicCURLF."\r\n");
