@@ -71,66 +71,79 @@ $USERAGENTFile = $ModuleAPI.$ModuleArray[11].$Cache;
 if($AdvancedModule =="true"){$AdvancedModuleCURL  = curl_init();
 curl_setopt($AdvancedModuleCURL,CURLOPT_URL,"$AdvancedFile");
 curl_setopt($AdvancedModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($AdvancedModuleCURL,CURLOPT_TIMEOUT,30);
 $AdvancedCURLF  = curl_exec($AdvancedModuleCURL);
 curl_close($AdvancedModuleCURL);}
 if($BasicModule    =="true"){$BasicModuleCURL     = curl_init();
 curl_setopt($BasicModuleCURL,CURLOPT_URL,"$BasicFile");
 curl_setopt($BasicModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($BasicModuleCURL,CURLOPT_TIMEOUT,30);
 $BasicCURLF     = curl_exec($BasicModuleCURL);
 curl_close($BasicModuleCURL);}
 if($DIRECTModule   =="true"){$DIRECTModuleCURL    = curl_init();
 curl_setopt($DIRECTModuleCURL,CURLOPT_URL,"$DIRECTFile");
 curl_setopt($DIRECTModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($DIRECTModuleCURL,CURLOPT_TIMEOUT,30);
 $DIRECTCURLF    = curl_exec($DIRECTModuleCURL);
 curl_close($DIRECTModuleCURL);}
 if($DefaultModule  =="true"){$DefaultModuleCURL   = curl_init();
 curl_setopt($DefaultModuleCURL,CURLOPT_URL,"$DefaultFile");
 curl_setopt($DefaultModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($DefaultModuleCURL,CURLOPT_TIMEOUT,30);
 $DefaultCURLF   = curl_exec($DefaultModuleCURL);
 curl_close($DefaultModuleCURL);}
 if($IPCIDRModule   =="true"){$IPCIDRModuleCURL    = curl_init();
 curl_setopt($IPCIDRModuleCURL,CURLOPT_URL,"$IPCIDRFile");
 curl_setopt($IPCIDRModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($IPCIDRModuleCURL,CURLOPT_TIMEOUT,30);
 $IPCIDRCURLF    = curl_exec($IPCIDRModuleCURL);
 curl_close($IPCIDRModuleCURL);}
 if($KEYWORDModule  =="true"){$KEYWORDModuleCURL   = curl_init();
 curl_setopt($KEYWORDModuleCURL,CURLOPT_URL,"$KEYWORDFile");
 curl_setopt($KEYWORDModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($KEYWORDModuleCURL,CURLOPT_TIMEOUT,30);
 $KEYWORDCURLF   = curl_exec($KEYWORDModuleCURL);
 curl_close($KEYWORDModuleCURL);}
 if($REJECTModule   =="true"){$REJECTModuleCURL    = curl_init();
 curl_setopt($REJECTModuleCURL,CURLOPT_URL,"$REJECTFile");
 curl_setopt($REJECTModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($REJECTModuleCURL,CURLOPT_TIMEOUT,30);
 $REJECTCURLF    = curl_exec($REJECTModuleCURL);
 curl_close($REJECTModuleCURL);}
 if($RewriteModule  =="true"){$RewriteModuleCURL   = curl_init();
 curl_setopt($RewriteModuleCURL,CURLOPT_URL,"$RewriteFile");
 curl_setopt($RewriteModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($RewriteModuleCURL,CURLOPT_TIMEOUT,30);
 $RewriteCURLF   = curl_exec($RewriteModuleCURL);
 curl_close($RewriteModuleCURL);}
 if($YouTubeModule  =="true"){$YouTubeModuleCURL   = curl_init();
 curl_setopt($YouTubeModuleCURL,CURLOPT_URL,"$YouTubeFile");
 curl_setopt($YouTubeModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($YouTubeModuleCURL,CURLOPT_TIMEOUT,30);
 $YouTubeCURLF   = curl_exec($YouTubeModuleCURL);
 curl_close($YouTubeModuleCURL);}
 if($OtherModule    =="true"){$OtherModuleCURL     = curl_init();
 curl_setopt($OtherModuleCURL,CURLOPT_URL,"$OtherFile");
 curl_setopt($OtherModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($OtherModuleCURL,CURLOPT_TIMEOUT,30);
 $OtherCURLF     = curl_exec($OtherModuleCURL);
 curl_close($OtherModuleCURL);}
 if($USERAGENTModule=="true"){$USERAGENTModuleCURL = curl_init();
 curl_setopt($USERAGENTModuleCURL,CURLOPT_URL,"$USERAGENTFile");
 curl_setopt($USERAGENTModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($USERAGENTModuleCURL,CURLOPT_TIMEOUT,30);
 $USERAGENTCURLF = curl_exec($USERAGENTModuleCURL);
 curl_close($USERAGENTModuleCURL);}
 if($HostsModule    =="true"){$HostsModuleCURL     = curl_init();
 curl_setopt($HostsModuleCURL,CURLOPT_URL,"$HostsAPI");
 curl_setopt($HostsModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($HostsModuleCURL,CURLOPT_TIMEOUT,30);
 $HostsCURLF     = curl_exec($HostsModuleCURL);
 curl_close($HostsModuleCURL);}
 if($HostsFixModule =="true"){$HostsFixModuleCURL  = curl_init();
 curl_setopt($HostsFixModuleCURL,CURLOPT_URL,"$HostsFixFile");
 curl_setopt($HostsFixModuleCURL,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($HostsFixModuleCURL,CURLOPT_TIMEOUT,30);
 $HostsFixCURLF  = curl_exec($HostsFixModuleCURL);
 curl_close($HostsFixModuleCURL);}
 
