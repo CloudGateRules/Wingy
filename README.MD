@@ -10,8 +10,7 @@
 **更新记录: CloudGate规则 [更新记录](UPdate.txt) 列表**
 
 ## 规则地址
-#### 主用线路: https://async.be/Rule/Basic/Wingy.php
-#### 备用线路: <del>https://burpsuite.site/Rule/General/Wingy.php</del>
+#### 主用线路: https://async.be/Rule/Basic/Wingy
 
 ## License
 - 本项目的所有代码除另有说明外,均按照 [MIT License](LICENSE) 发布。

@@ -2,7 +2,7 @@
 
 /*
  * License: MIT
- *    Time: 2017-01-20 11:18:55
+ *    Time: 2017-02-08 06:42:56
  *    Name: Wingy.php
  *    Note: CloudGate Wingy Basic Rule
  *  Author: Eval,BurpSuite
@@ -12,7 +12,7 @@
 header('Content-Disposition: attachment; filename='.'Wingy.Conf');
 
 # ClouGate控制器
-require_once "../Controller/Controller.php";
+require_once "../../Controller/Controller.php";
 
 # Cloud配置信息
 echo "#  \r\n";
@@ -41,39 +41,39 @@ echo "rule:\r\n";
 echo "  - type: list\r\n";
 echo "    adapter: direct\r\n";
 echo "    criteria:\r\n";
-echo "      # Default\r\n".Replace(CURL(true,$RuleList['Default']).$CURLContent,false,false,false,false,true,false).$Wingy_Default."\r\n";
+echo Replace(CURL($RuleList['Default']).$CURLContent,'Wingy').$Wingy_Default;
 echo "  - type: list\r\n";
 echo "    adapter: PROXY\r\n";
 echo "    criteria:\r\n";
-echo "      # PROXY\r\n".Replace(CURL(true,$RuleList['Advanced']).$CURLContent,false,false,false,false,true,false).$Wingy_Advanced;
+echo Replace(CURL($RuleList['Advanced']).$CURLContent,'Wingy').$Wingy_Advanced;
 echo "  - type: list\r\n";
 echo "    adapter: reject\r\n";
 echo "    criteria:\r\n";
-echo "      # REJECT\r\n".Replace(CURL(true,$RuleList['REJECT']).$CURLContent,false,false,false,false,true,false).$Wingy_REJECT;
+echo Replace(CURL($RuleList['REJECT']).$CURLContent,'Wingy').$Wingy_REJECT;
 echo "  - type: list\r\n";
 echo "    adapter: direct\r\n";
 echo "    criteria:\r\n";
-echo "      # KEYWORD-DIRECT\r\n".Replace(CURL(true,$RuleList['KEYWORD']).$CURLContent,false,false,false,false,true,false).$Wingy_KEYWORD_DIRECT;
+echo Replace(CURL($RuleList['KEYWORD']).$CURLContent,'Wingy').$Wingy_KEYWORD_DIRECT;
 echo "  - type: list\r\n";
 echo "    adapter: PROXY\r\n";
 echo "    criteria:\r\n";
-echo "      # KEYWORD-PROXY\r\n".Replace(CURL(true,$RuleList['KEYWORD']).$CURLContent,false,false,false,false,true,false).$Wingy_KEYWORD_Proxy;
+echo Replace(CURL($RuleList['KEYWORD']).$CURLContent,'Wingy').$Wingy_KEYWORD_Proxy;
 echo "  - type: list\r\n";
 echo "    adapter: reject\r\n";
 echo "    criteria:\r\n";
-echo "      # KEYWORD-REJECT\r\n".Replace(CURL(true,$RuleList['KEYWORD']).$CURLContent,false,false,false,false,true,false).$Wingy_KEYWORD_REJECT;
+echo Replace(CURL($RuleList['KEYWORD']).$CURLContent,'Wingy').$Wingy_KEYWORD_REJECT;
 echo "  - type: iplist\r\n";
 echo "    adapter: direct\r\n";
 echo "    criteria:\r\n";
-echo "      # IPCIDR-DIRECT\r\n".Replace(CURL(true,$RuleList['IPCIDR']).$CURLContent,false,false,false,false,true,false).$Wingy_IPCIDR_DIRECT;
+echo Replace(CURL($RuleList['IPCIDR']).$CURLContent,'Wingy').$Wingy_IPCIDR_DIRECT;
 echo "  - type: iplist\r\n";
 echo "    adapter: PROXY\r\n";
 echo "    criteria:\r\n";
-echo "      # IPCIDR-PROXY\r\n".Replace(CURL(true,$RuleList['IPCIDR']).$CURLContent,false,false,false,false,true,false).$Wingy_IPCIDR_Proxy;
+echo Replace(CURL($RuleList['IPCIDR']).$CURLContent,'Wingy').$Wingy_IPCIDR_Proxy;
 echo "  - type: iplist\r\n";
 echo "    adapter: reject\r\n";
 echo "    criteria:\r\n";
-echo "      # IPCIDR-REJECT\r\n".Replace(CURL(true,$RuleList['IPCIDR']).$CURLContent,false,false,false,false,true,false).$Wingy_IPCIDR_REJECT;
+echo Replace(CURL($RuleList['IPCIDR']).$CURLContent,'Wingy').$Wingy_IPCIDR_REJECT;
 echo "      # Other\r\n";
 echo "  - type: DNSFail\r\n";
 echo "    adapter: PROXY\r\n";
