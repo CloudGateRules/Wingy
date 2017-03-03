@@ -12,6 +12,9 @@
 ## 规则地址
 #### 主用线路: https://async.be/Rule/Basic/Wingy
 
+## 联系方式
+[Twitter](https://twitter.com/OAuth4)
+
 ## License
 - 本项目的所有代码除另有说明外,均按照 [MIT License](LICENSE) 发布。
 - 本项目的Wingy.Conf，API，README.MD等资源基于[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
